@@ -1,8 +1,5 @@
 Hey New Project!
 
-
-
-
 Pages:
     >> Home.Page.jsx (Default>Hoc.jsx)
     >> Movie.Page.jsx (Movie.Hoc.jsx)
