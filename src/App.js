@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import HomePage from './pages/Home.page';
 import PlayPage from './pages/Play.page';
 import MoviePage from './pages/Movie.page';
+import { MovieContext } from './context/Movie.context';
 
 axios.defaults.baseURL="https://api.themoviedb.org/3";
 axios.defaults.params={};
@@ -23,6 +24,7 @@ function App() {
       <Route path="/movie/:id" element={<MoviePage/>}/>
       <Route path="/plays" element={<PlayPage/>}/>
     </Routes>
+  
   );
 }
 
