@@ -207,8 +207,8 @@ const MoviePage = () => {
               {cast.map((castData) => (
                 <Cast
                   image={castData.profile_path}
-                  castName={movie.original_name}
-                  role={movie.character}
+                  castName={castData.original_name}
+                  role={castData.character}
                 />
               ))}
             </Slider>

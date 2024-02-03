@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 // import { MovieContext } from "../../context/Movie.context";
 import { MovieContext } from "../../pages/Movie.page";
+import PaymentModal from "../PaymentModal/Payment.Component";
 const MovieInfo = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [price, setPrice] = useState(0);
@@ -22,7 +23,7 @@ const MovieInfo = () => {
 
   return (
     <>
-      {/* <PaymentModel setIsOpen={setIsOpen} isOpen={isOpen} price={price} />; */}
+      <PaymentModal setIsOpen={setIsOpen} isOpen={isOpen} price={price} />;
       <div className="flex flex-col gap-8">
         <h1 className="text-white text-5xl font-bold">
           {movie.original_title}
@@ -35,10 +36,10 @@ const MovieInfo = () => {
           </h4>
         </div>
         <div className="flex items-center gap-3 md:px-4 md:w-screen text-xl px-4">
-          <button className="bg-red-500  py-3 text-white font-semibold rounded-lg">
+          <button onClick={rentMovie} className="bg-red-500  py-3 text-white font-semibold rounded-lg">
             Rent $149
           </button>
-          <button className="bg-red-500  py-3 text-white font-semibold rounded-lg">
+          <button onClick={buyMovie} className="bg-red-500  py-3 text-white font-semibold rounded-lg">
             Buy $999
           </button>
         </div>
