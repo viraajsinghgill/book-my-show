@@ -7,8 +7,23 @@ const PaymentModal = ({setIsOpen,isOpen,price}) => {
     setIsOpen(false);
   }
 
-  const launchRazorPay=()=>{
-    
+  const launchRazorPay = () =>{
+    let options = {
+      key: "rzp_test_iD1x17LhTM840c",
+      amount: price * 100,
+      currency: "INR",
+      name: "Book My Show Clone",
+      description: "Movie purchase or rent",
+      handler: () => {
+        setIsOpen(false);
+        alert("Payment Succesful");
+      },
+      theme: {color: "#c4242d"},
+    };
+
+    let razorPay = window.Razorpay(options);
+    razorPay.open();
+
   }
 
   return (
