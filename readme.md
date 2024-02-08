@@ -1,4 +1,9 @@
-In a developing phase and here is the progress write now and will be deploying very soon stay connected
+I have developed it to some certain extent will be completing it very soon
+
+
+https://github.com/viraajsinghgill/book-my-show/assets/125380557/19c89603-c9b1-406a-a974-575192d9e180
+
+
 <img width="950" alt="image" src="https://github.com/viraajsinghgill/book-my-show/assets/125380557/72f9492a-48bd-46d0-aae7-33b15318a761">
 
 <img width="960" alt="image" src="https://github.com/viraajsinghgill/book-my-show/assets/125380557/d8adbf7c-280b-412b-b82f-a62c2aaf55b9">
